@@ -4,20 +4,20 @@
         "https://w3id.org/security/suites/jws-2020/v1",
         "https://w3id.org/security/suites/ed25519-2020/v1"
     ],
-    "id": "did:web:vivek-bodar.github.io:iataHolder",
+    "id": "did:web:vivek-bodar.github.io:iata-holder",
     "authentication": [
-        "did:web:vivek-bodar.github.io:iataHolder#key-1"
+        "did:web:vivek-bodar.github.io:iata-holder#key-1"
     ],
     "service": [
         {
-            "id": "did:web:vivek-bodar.github.io:iataHolder#did-communication",
+            "id": "did:web:vivek-bodar.github.io:iata-holder#did-communication",
             "type": "did-communication",
             "serviceEndpoint": "http://iata_holder_agent:6030",
             "accept": [
                 "didcomm/aip2;env=rfc19"
             ],
             "recipient_keys": [
-                "did:web:vivek-bodar.github.io:iataHolder#key-1"
+                "did:web:vivek-bodar.github.io:iata-holder#key-1"
             ],
             "routing_keys": [],
             "priority": 1
@@ -25,14 +25,14 @@
     ],
     "verificationMethod": [
         {
-            "id": "did:web:vivek-bodar.github.io:iataHolder#key-1",
+            "id": "did:web:vivek-bodar.github.io:iata-holder#key-1",
             "type": "Ed25519VerificationKey2018",
-            "controller": "did:web:vivek-bodar.github.io:iataHolder",
+            "controller": "did:web:vivek-bodar.github.io:iata-holder",
             "publicKeyBase58": "3kapqQjHXDpCyTiDGYwdbJsCVfkLoZu4gZ5iz1QGzbK9"
         }
     ],
     "alsoKnownAs": [],
     "assertionMethod": [
-        "did:web:vivek-bodar.github.io:iataHolder#key-1"
+        "did:web:vivek-bodar.github.io:iata-holder#key-1"
     ]
 }
